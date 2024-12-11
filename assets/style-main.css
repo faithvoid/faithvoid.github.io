@@ -50,7 +50,7 @@ body, html {
     margin: 0 auto;
     padding: 0px;
     width: 750px;
-    border: 2px solid #3e0000; /* Changed from #719dfd to #ff4d4d */
+    border: 2px solid #a2c4c9; /* Changed from #719dfd to #ff4d4d */
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
 }
 
@@ -62,7 +62,7 @@ body, html {
     padding: 0px;
     width: 750px;
     max-width: calc(100% - 50px); /* Ensure it doesn't overflow the viewport */
-    border: 2px solid #3e0000; /* Changed from #719dfd to #ff4d4d */
+    border: 2px solid #a2c4c9; /* Changed from #719dfd to #ff4d4d */
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
 }
 
