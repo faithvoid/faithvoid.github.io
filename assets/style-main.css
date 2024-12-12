@@ -67,7 +67,7 @@ body, html {
 }
 
 .title-bar {
-    background: linear-gradient(to bottom, #FFFFFF, #580a0a); /* Changed from #a2bffe to #ff6666 */
+    background: linear-gradient(to bottom, #FFFFFF, #a2c4c9); /* Changed from #a2bffe to #ff6666 */
     height: 30px;
     width: 100%;
     position: relative;
@@ -97,7 +97,7 @@ body, html {
 }
 
 .video-container {
-    border: 2px solid #3e0000; /* Changed from #719dfd to #ff4d4d */
+    border: 2px solid #a2c4c9; /* Changed from #719dfd to #ff4d4d */
     padding: 0px;
     margin: 10px;
     width: fit-content;
