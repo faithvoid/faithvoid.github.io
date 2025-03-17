@@ -1,20 +1,27 @@
 <rss version="2.0">
 <channel>
 <title>Cortana News</title>
-<link>http://lain.ftp.sh/cortana/</link>
-<description>
-Cortana Server Browser - News
-</description>
+<link>http://faithvoid.github.io/cortana</link>
+<description>Cortana - News</description>
 <language>en-us</language>
+  
 <item>
-<title> Cortana v1.0 - First Release</title>
+<title>Cortana v0.2 - Second Release</title>
+<description>Cortana v0.2 now includes a wide variety of visual and quality of life enhancements, such as improved icons, toggleable items/headers/logos, and more!</description>
+<category>News</category>
+</item>
+
+<item>
+<title>Cortana v0.1 - First Release</title>
 <description> Thank you for downloading Cortana 0.1! There are plenty more features to be implemented soon, so keep your eyes peeled for more updates on this page!</description>
 <category>News</category>
 </item>
+  
 <item>
 <title>Hello World</title>
 <description>Hello World! </description>
 <category>News</category>
 </item>
+  
   </channel>
 </rss>
