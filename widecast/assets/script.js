@@ -14,7 +14,7 @@ const queueList = document.getElementById('videoQueueList');
 let videoQueue = [];
 let currentVideoIndex = 0;
 let currentAspectMode = 'fit';
-const aspectModes = ['fit','original','16-9','4-3','stretch'];
+const aspectModes = ['fit','original','stretch'];
 
 function updateQueueList() {
     queueList.innerHTML = '';
@@ -114,18 +114,6 @@ function applyAspect(value) {
     const maxWindowHeight = window.innerHeight * 0.9;
 
     switch(value) {
-        case '16-9':
-            aspectBox.classList.add('ratio-16-9');
-            video.style.objectFit = 'contain';
-            video.style.width = '100%';
-            video.style.maxHeight = maxWindowHeight + 'px';
-            break;
-        case '4-3':
-            aspectBox.classList.add('ratio-4-3');
-            video.style.objectFit = 'contain';
-            video.style.width = '100%';
-            video.style.maxHeight = maxWindowHeight + 'px';
-            break;
         case 'original':
             aspectBox.classList.add('ratio-original');
             video.style.objectFit = 'contain';
