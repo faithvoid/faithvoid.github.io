@@ -8,7 +8,7 @@ const aspectSelect = document.getElementById('aspectSelect');
 const playBtn = document.getElementById('playBtn');
 const pauseBtn = document.getElementById('pauseBtn');
 const stopBtn = document.getElementById('stopBtn');
-const clearQueue = document.getElementById('clearQueue');
+const clearQueueBtn = document.getElementById('clearQueue');
 const queueList = document.getElementById('videoQueueList');
 
 let videoQueue = [];
@@ -30,6 +30,9 @@ function updateQueueList() {
         queueList.appendChild(li);
     });
 }
+
+// Attach click event
+clearQueueBtn.addEventListener('click', clearVideoQueue);
 
 function playNextVideo() {
     if (currentVideoIndex < videoQueue.length) {
@@ -68,7 +71,6 @@ video.addEventListener('ended', () => {
         updateQueueList();
     }
 });
-
 
 playBtn.addEventListener('click', () => {
     if (video.src) video.play();
