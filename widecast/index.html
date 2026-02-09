@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WideCast</title>
+<link rel="stylesheet" href="assets/style-main.css">
+<link rel="icon" type="image/x-icon" href="favicon.png">
+<style>
+  body {
+    color: white;
+    font-family: system-ui, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  center h1 {
+    font-size: 60px;
+  }
+
+  center h3 {
+    font-size: 20px;
+  }
+
+  .menu {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #444;
+  }
+
+  .title-bar {
+    background: #222;
+    padding: 5px;
+    border-bottom: 1px solid #444;
+  }
+
+  .title-bar-text {
+    font-size: 16px;
+    color: white;
+  }
+
+  .menu a {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .video-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    background: black;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .aspect-box {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+
+  .ratio-original video, .ratio-16-9 video, .ratio-4-3 video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .controls, select, input {
+    margin: 10px;
+    color: white;
+    background: #111;
+    border: 1px solid #666;
+    padding: 5px;
+    font-size: 16px;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #444;
+    background: rgba(0,0,0,0.7);
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+
+<center>
+    <h1>WideCast</h1>
+</center>
+
+<div class="menu">
+    <nav class="title-bar">
+        <center><span class="title-bar-text">[ L A Y E R : 0 1 - V I D E O ]</span></center>
+    </nav>
+    <br>
+    <center>
+        <div class="video-wrapper" id="videoWrapper">
+            <div id="aspectBox" class="aspect-box ratio-original">
+                <video id="video" controls disableRemotePlayback x-webkit-airplay="deny">
+                    <track id="subtitleTrack" kind="subtitles" srclang="en" label="Subtitles">
+                    Your browser does not support HTML5 video.
+                </video>
+            </div>
+        </div>
+            <label>Aspect Ratio:</label>
+            <select id="aspectSelect">
+                <option value="fit">Fit to Screen</option>
+                <option value="original">Original</option>
+                <option value="stretch">Stretch</option>
+                <option value="16-9">16:9</option>
+                <option value="4-3">4:3</option>
+            </select>
+    </center>
+</div>
+
+<div class="menu">
+    <nav class="title-bar">
+        <center><span class="title-bar-text">[ L A Y E R : 0 2 - C O N T R O L S ]</span></center>
+    </nav>
+    <br>
+    <center>
+        <nav>
+  <button id="playBtn">Play</button>
+  <button id="pauseBtn">Pause</button>
+  <button id="stopBtn">Stop</button><br><br>
+            <label for="videoInput">Video:</label>
+            <input type="file" id="videoInput" accept="video/*"><br>
+            <label for="subtitleInput">Subtitles:</label>
+            <input type="file" id="subtitleInput" accept=".vtt,.srt"><br><br>
+        </nav>
+    </center>
+</div>
+
+<footer>
+    Made and hosted with love by <a href="https://github.com/faithvoid" style="color:white">Faith Void</a> @ <a href="https://faithvoid.github.io/" style="color:white">faithvoid.github.io</a>
+</footer>
+
+<script src="assets/script.js">
+</script>
+
+<script src="assets/randombg.js">
+</script>
+
+</body>
+</html>
