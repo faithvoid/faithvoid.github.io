@@ -1,0 +1,116 @@
+@font-face {
+    font-family: "RS Avril";
+    src: url("RSAvril-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Protomo, Outline";
+    src: url("Protomo-Outline.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Protomo, Regular";
+    src: url("Protomo.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Runic MT Condensed";
+    src: url("RunicMTCondensed.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Avojaloin";
+    src: url("Avojaloin.ttf") format("truetype");
+}
+
+h1, h2, h3, h4, span {
+    font-family: "Avojaloin", Arial, sans-serif;
+    src: url("Protomo-Outline.otf") format("opentype");
+    text-shadow: 1px 1px 2px black;
+}
+
+a, footer {
+    font-family: "Avojaloin", Arial, sans-serif;
+    font-size: 16px;
+    text-shadow: 1px 1px 2px black;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 1px 1px 2px black;
+}
+
+.menu {
+    margin: 0 auto;
+    padding: 0px;
+    width: 750px;
+    border: 2px solid #a2c4c9;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+}
+
+.menu-footer-1 {
+    position: static;
+    left: 50%;
+    bottom: 50px;
+    margin: 0 auto;
+    padding: 0px;
+    width: 750px;
+    max-width: calc(100% - 50px);
+    border: 2px solid #a2c4c9;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, .2);
+}
+
+.title-bar {
+    background: linear-gradient(to bottom, #FFFFFF, #a2c4c9);
+    height: 30px;
+    width: 100%;
+    position: relative;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.window-content {
+    position: absolute;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container {
+    border: 2px solid #a2c4c9;
+    padding: 0px;
+    margin: 10px;
+    width: fit-content;
+}
+
+@media (max-width: 1200px) {
+    .video-container {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (orientation: portrait) {
+    body, html {
+        background-position: right center;
+    }
+}
