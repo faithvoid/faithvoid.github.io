@@ -110,41 +110,27 @@
                 </video>
             </div>
         </div>
-            <label>Select your video/subtitles, select your aspect ratio, cast the tab, and enjoy!</label><br>
             <label>Aspect Ratio:</label>
             <select id="aspectSelect">
-                <option value="fit">Fit to Screen</option>
                 <option value="original">Original</option>
+                <option value="fit">Fit to Screen</option>
                 <option value="stretch">Stretch</option>
             </select><br>
                   <label>(To display 4:3 content properly on a 4:3 display, select "Stretch")</label><br>
-              <ul id="videoQueueList" style="list-style:none; padding:0; max-width:500px;"></ul>
-        <button id="clearQueue">Clear Queue</button><br><br>
-    </center>
-</div>
-
-<div class="menu">
-    <nav class="title-bar">
-        <center><span class="title-bar-text">[ L A Y E R : 0 2 - C O N T R O L S ]</span></center>
-    </nav>
-    <br>
-    <center>
         <nav>
-  <button id="playBtn">Play</button>
-  <button id="pauseBtn">Pause</button>
-  <button id="stopBtn">Stop</button><br><br>
             <label for="videoInput">Video:</label>
-            <input type="file" id="videoInput" accept="video/*"><br>
-<label for="videoURLInput">or</label><br>
-<label for="videoURLInput">Video URL:</label>
-<input type="text" id="videoURLInput" placeholder="https://example.com/video.mp4">
+            <input type="file" id="videoInput" accept="video/*"><input type="text" id="videoURLInput" placeholder="https://example.com/video.mp4">
 <button id="addURLBtn">Add URL</button>
 <br>
             <label for="subtitleInput">Subtitles:</label>
             <input type="file" id="subtitleInput" accept=".vtt,.srt"><br>
         </nav>
+
+              <ul id="videoQueueList" style="list-style:none; padding:0; max-width:500px;"></ul>
+        <button id="clearQueue">Clear Queue</button><br><br>
     </center>
 </div>
+
 
 <footer>
     Made and hosted with love by <a href="https://github.com/faithvoid" style="color:white">Faith Void</a> @ <a href="https://faithvoid.github.io/" style="color:white">faithvoid.github.io</a>
