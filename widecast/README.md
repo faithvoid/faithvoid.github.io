@@ -1,5 +1,5 @@
 ## WideCast
-A web solution for casting 4:3 (and similar) content in the correct resolution via Chromecasts.
+A simple web solution for casting 4:3 (and similar) content in the correct resolution via Chromecasts.
 
 ## How it works:
 - Select the video file on your PC or the enter video file URL (no data is uploaded, this works entirely via your built-in HTML5 media player), uploading subtitles if needed.
