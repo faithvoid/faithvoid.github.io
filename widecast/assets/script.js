@@ -8,7 +8,6 @@ const aspectSelect = document.getElementById('aspectSelect');
 const playBtn = document.getElementById('playBtn');
 const pauseBtn = document.getElementById('pauseBtn');
 const stopBtn = document.getElementById('stopBtn');
-const clearQueue = document.getElementById('clearQueue');
 const queueList = document.getElementById('videoQueueList');
 
 let videoQueue = [];
